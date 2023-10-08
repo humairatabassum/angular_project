@@ -1,0 +1,22 @@
+<p>blok-post works!</p>
+
+<p>{{number}}</p>
+
+
+
+<div (click)="onDivClick()">
+  <button class="btn" (click)="onClick($event)">Click Me</button>
+  <p>{{line}}</p>
+</div>
+
+<div class="blogpost" *ngFor="let blogpost of blogposts">
+      <h2>{{blogpost.Title}}</h2>
+      <p>{{blogpost.Content}}</p>
+
+</div>
+
+<form>
+  <input [(ngModel)] ="email" type="text" name="name">
+  <button class="btn" (click)="onSave()">Save</button>
+  <p>{{email}}</p>
+</form>

@@ -1,0 +1,55 @@
+<!-- <div class="card">
+  <h5 class="card-header">Registration Form</h5>
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+          <label>Product Name</label>
+          <input type="text" class="form-control" />
+          <div class="invalid-feedback">
+            <div>
+            Product Name is required
+            </div>
+          </div>
+          <label>Product Price</label>
+          <input type="text"  class="form-control" />
+          <div class="invalid-feedback">
+            <div>Product price is required</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+
+          <div style="text-align: center;">
+            <button class="btn btn-primary mr-1" style="margin: 10px;">Save</button>
+            <button class="btn btn-secondary" type="reset" style="margin: 10px;">
+              Cancel
+            </button>
+          </div>
+        </div>
+
+
+    </form>
+  </div>
+</div> -->
+
+
+<div class="product-card">
+  <h2 class="card-title">Add a New Product</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="productName">Product Name</label>
+      <input type="text" id="productName" name="productName" class="form-control" [(ngModel)]="productName" required>
+    </div>
+    <div class="form-group">
+      <label for="productPrice">Price</label>
+      <input type="number" id="productPrice" name="productPrice" class="form-control" [(ngModel)]="productPrice"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="productDescription">Description</label>
+      <textarea id="productDescription" name="productDescription" class="form-control" [(ngModel)]="productDescription"
+        required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

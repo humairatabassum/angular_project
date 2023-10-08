@@ -1,0 +1,15 @@
+.blogpost
+{
+  max-width: 500px;
+  background-color: rgb(229, 220, 241);
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.btn
+{
+  margin: 10px;
+  padding: 10px;
+  background-color: #c1c4f6;
+}
+
